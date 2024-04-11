@@ -3,5 +3,5 @@ version: 2
 models: 
   - name: customer_acquisition_monthly
   - name: customer_lifetime_value
-  - name: customer_order_salary
+  - name: customer_order_summary
   - name: orders_by_day
