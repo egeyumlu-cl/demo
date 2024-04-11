@@ -10,4 +10,4 @@ JOIN
      FROM  {{ source('jaffle_shop', 'Orders') }} o
      GROUP BY USER_ID) o ON c.ID = o.USER_ID
 GROUP BY
-    DATE_TRUNC('month', first_order_date);
+    DATE_TRUNC('month', first_order_date)
