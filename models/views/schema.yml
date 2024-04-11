@@ -2,25 +2,24 @@ version: 2
 
 models: 
   - name: customer_acquisition_monthly
-    description:
-   - name: customer_lifetime_value
-    description: "A view aggregating customer data to calculate lifetime value metrics, including total spent, total orders, and average order value."
-    columns:
-      - name: customer_id
-        description: "The unique identifier of the customer."
-        tests:
-          - unique
-          - not_null
+  - name: customer_lifetime_value
+  description: "A view aggregating customer data to calculate lifetime value metrics, including total spent, total orders, and average order value."
+  columns:
+    - name: customer_id
+      description: "The unique identifier of the customer."
+      tests:
+        - unique
+        - not_null
 
-      - name: first_name
-        description: "The first name of the customer."
-        tests:
-          - not_null
+    - name: first_name
+      description: "The first name of the customer."
+      tests:
+        - not_null
 
-      - name: last_name
-        description: "The last name of the customer."
-        tests:
-          - not_null
+    - name: last_name
+      description: "The last name of the customer."
+      tests:
+        - not_null
           
   - name: customer_order_salary
   - name: orders_by_day
