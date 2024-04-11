@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: jaffle_shop schema from the database 
+    database: raw
+    schema: jaffle_shop
+    tables:
+      # Dim Tables of AAD
+      - name: Customers
+      - name: Orders

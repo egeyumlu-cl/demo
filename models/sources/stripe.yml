@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: stripe
+    description: stripe schema from the database 
+    schema: stripe
+    database: raw
+    tables:
+      # Dim Tables of AAD
+      - name: Payment
